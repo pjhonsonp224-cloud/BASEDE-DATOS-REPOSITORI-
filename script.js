@@ -1,0 +1,87 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const GITHUB_REPO_URL = "https://github.com/pjhonsonp224-cloud";
+  const iconos = ["💎", "🚀", "⚡", "🔮", "🛠️", "📡", "🛡️", "🔋", "💡", "🧠", "🎯", "🔌", "🛰️", "🧪", "⚙️"];
+
+  const semanas = [
+    { label: "Semana 1", descripcion: "Manuales e informe técnico.", archivos: [{ nombre: "ARQUITECTURA DE BASES DE DATOS", enlace: "archivos/Arquitectura de Sistemas de Bases de Datos.pdf" }, { nombre: "INFORME BASE DE DATOS II", enlace: "archivos/repositoros comparacion.pdf" }] },
+    { label: "Semana 2", descripcion: "Instalación y modelamiento.", archivos: [{ nombre: "Manual SQL Server", enlace: "archivos/2semana_manualSQL.pdf" }, { nombre: "Modelamiento de datos", enlace: "archivos/SEMANA 2 Pregunta 01 Y 02.pdf" }] },
+    { label: "Semana 3", descripcion: "Niveles de abstracción.", archivos: [{ nombre: "Resumen Arquitectura", enlace: "archivos/semana 3 resumen de arquitectura de datos y niveles de abstraccion.pdf" }, { nombre: "Modelo Relación", enlace: "archivos/3 semana modelado de datos preguntas.pdf" }] },
+    { label: "Semana 4", descripcion: "Arquitectura de datos S4.", archivos: [{ nombre: "RESUMEN DE ARQUITECTURA", enlace: "archivos/SEMANA 4.pdf" }] },
+    { label: "Semana 5", descripcion: "DB QhatuPeru completo.", archivos: [{ nombre: "Tablas Base de datos", enlace: "archivos/semana5_tablas.pdf" }, { nombre: "Incision de datos", enlace: "archivos/semana5_incision.pdf" }, { nombre: "Base de datos QhatuPeru", enlace: "archivos/semana5_creacionDB.pdf" }] },
+    { label: "Semana 6", descripcion: "Actividades avanzadas S6.", archivos: [{ nombre: "Actividades semana 6", enlace: "archivos/semana6_actividades.pdf" }] },
+    { label: "Semana 7", descripcion: "Tareas de la semana 7.", archivos: [{ nombre: "Tablas DB QhatuPeru", enlace: "archivos/semana5_tablas.pdf" }] },
+    { label: "Semana 9", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "Consultas avanzadas", enlace: "archivos/semana9_enunciados.pdf" }] },
+    { label: "Semana 10", descripcion: "Prácticas calificadas.", archivos: [{ nombre: "PRACTICA SEMANA 10", enlace: "archivos/semana10_PRACTICA.pdf" }] },
+    { label: "Semana 11", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
+    { label: "Semana 12", descripcion: "Gestión de datos S12.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana12_PRACTICA.pdf" }] },
+    { label: "Semana 13", descripcion: "Optimización de DB.", archivos: [{ nombre: "PRACTICA SEMANA 13", enlace: "archivos/semana13_PRACTICA.pdf" }] },
+    { label: "Semana 14", descripcion: "Pruebas de sistemas.", archivos: [{ nombre: "Practica - Semana 14", enlace: "archivos/semana14_PRACTICA.pdf" }] },
+    { label: "Semana 15", descripcion: "Repaso y examen final.", archivos: [{ nombre: "Resumen General", enlace: "archivos/semana15_resumen.pdf" }] }
+  ];
+
+  const contenedor = document.getElementById("contenedor-semanas");
+  const modal = document.getElementById("modal-tarea");
+
+  function dibujarSemanas() {
+    contenedor.innerHTML = "";
+    let gridSemanas = null;
+
+    semanas.forEach((sem, idx) => {
+      if (idx % 4 === 0) {
+        const unidadWrap = document.createElement("section");
+        unidadWrap.className = "unidad-container";
+        unidadWrap.innerHTML = `<h3 class="unidad-header">Unidad ${Math.floor(idx/4) + 1}</h3>`;
+        gridSemanas = document.createElement("div");
+        gridSemanas.className = "unidad-grid";
+        unidadWrap.appendChild(gridSemanas);
+        contenedor.appendChild(unidadWrap);
+      }
+      const card = document.createElement("div");
+      card.className = "tarjeta-semana";
+      card.innerHTML = `<span class="icon-semana">${iconos[idx % iconos.length]}</span><h4>${sem.label}</h4><p style="font-size:0.85rem; color:#94a3b8;">${sem.descripcion}</p>`;
+      card.onclick = () => abrirModal(idx);
+      gridSemanas.appendChild(card);
+    });
+  }
+
+  function abrirModal(idx) {
+    const sem = semanas[idx];
+    modal.innerHTML = `
+      <div class="modal-content">
+        <div style="padding:20px; background:#0f172a; border-bottom:1px solid #334155; display:flex; justify-content:space-between; align-items:center;">
+          <h2 style="color:#38bdf8; margin:0;">${sem.label}</h2>
+          <button id="cerrar-modal" style="background:#ef4444; border:none; color:white; padding:8px 15px; border-radius:8px; cursor:pointer; font-weight:bold;">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-files">
+            <h4 style="margin-bottom:15px; color:#94a3b8;">Documentos</h4>
+            ${sem.archivos.map((a, i) => `<button class="file-item ${i===0?'activo':''}" data-enlace="${a.enlace}">${a.nombre}</button>`).join('')}
+          </div>
+          <div class="modal-viewer" id="visor-pdf">
+            <embed src="${sem.archivos[0].enlace}" type="application/pdf" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="modal-actions">
+           <a href="${sem.archivos[0].enlace}" id="btn-abrir-externo" target="_blank" class="btn-open">🔗 Abrir en nueva pestaña</a>
+           <a href="${GITHUB_REPO_URL}" target="_blank" class="btn-github">Ver en GitHub</a>
+        </div>
+      </div>`;
+
+    modal.classList.add("mostrar");
+    document.getElementById("cerrar-modal").onclick = () => modal.classList.remove("mostrar");
+
+    const btnsArchivos = modal.querySelectorAll(".file-item");
+    btnsArchivos.forEach(btn => {
+      btn.onclick = function() {
+        btnsArchivos.forEach(b => b.classList.remove("activo"));
+        this.classList.add("activo");
+        const url = this.getAttribute("data-enlace");
+        document.getElementById("visor-pdf").innerHTML = `<embed src="${url}" type="application/pdf" width="100%" height="100%">`;
+        document.getElementById("btn-abrir-externo").href = url; // ACTUALIZA EL BOTÓN AL CAMBIAR PDF
+      };
+    });
+  }
+
+  dibujarSemanas();
+});
+

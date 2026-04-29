@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard Académico - UPLA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <aside id="sidebar">
+    <div class="sidebar-logo">
+      <img src="logo.png" alt="UPLA">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#info-title"><span>👤</span> Perfil</a></li>
+        <li><a href="#main-content"><span>📅</span> Unidades</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="main-wrapper">
+    <header class="site-header">
+      <div class="header-content">
+        <h1>Repositorio <span class="text-gradient">Académico</span></h1>
+        <p>Ingeniería de Sistemas y Computación • 2026</p>
+      </div>
+    </header>
+
+    <section class="info-estudiante" id="info-title">
+      <div class="info-card">
+        <div class="avatar-circle">JM</div>
+        <div class="user-details">
+          <h2>Pariona Martin Jhonson Eduardo</h2>
+          <p><strong>Código:</strong> S03802A</p>
+          <p><strong>Carrera:</strong> Ingeniería de Sistemas y Computación</p>
+          <p><strong>Correo:</strong> <a href="mailto:s03802a@ms.upla.edu.pe">s03802a@ms.upla.edu.pe</a></p>
+        </div>
+      </div>
+    </section>
+
+    <main id="main-content">
+      <div id="contenedor-semanas"></div>
+    </main>
+
+    <footer>
+      <p>© 2026 Universidad Peruana Los Andes - Repositorio de Tareas</p>
+    </footer>
+  </div>
+
+  <div id="modal-tarea" class="modal-tarea"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

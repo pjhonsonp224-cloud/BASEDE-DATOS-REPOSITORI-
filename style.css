@@ -1,0 +1,49 @@
+:root {
+  --sidebar-width: 260px;
+  --bg-body: #0a0f1d;
+  --bg-card: #161e31;
+  --accent: #38bdf8;
+  --text-main: #f1f5f9;
+  --gradient: linear-gradient(135deg, #38bdf8 0%, #1d4ed8 100%);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background-color: var(--bg-body); color: var(--text-main); }
+
+/* Layout */
+#sidebar { position: fixed; left: 0; top: 0; width: var(--sidebar-width); height: 100vh; background: #020617; border-right: 1px solid #1e293b; padding: 2rem 1rem; z-index: 1000; }
+.main-wrapper { margin-left: var(--sidebar-width); width: calc(100% - var(--sidebar-width)); min-height: 100vh; }
+.sidebar-logo img { width: 80px; margin-bottom: 2rem; display: block; margin: 0 auto 2rem; }
+#sidebar a { color: #94a3b8; text-decoration: none; padding: 12px 15px; display: flex; align-items: center; gap: 10px; border-radius: 10px; }
+#sidebar a:hover { background: #1e293b; color: var(--accent); }
+
+/* Header & Cards */
+header { padding: 3rem 2rem; }
+.text-gradient { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.info-card { background: var(--bg-card); margin: 0 2rem; padding: 2rem; border-radius: 20px; display: flex; align-items: center; gap: 2rem; border: 1px solid #2d3748; }
+.avatar-circle { width: 70px; height: 70px; background: var(--gradient); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+
+.unidad-container { margin: 3rem 2rem; }
+.unidad-header { font-size: 1.6rem; color: var(--accent); margin-bottom: 1.5rem; border-left: 4px solid var(--accent); padding-left: 15px; }
+.unidad-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+.tarjeta-semana { background: var(--bg-card); padding: 1.5rem; border-radius: 16px; border: 1px solid #2d3748; cursor: pointer; transition: 0.3s; }
+.tarjeta-semana:hover { transform: translateY(-10px); border-color: var(--accent); }
+
+/* Modal */
+.modal-tarea { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(8px); z-index: 2000; padding: 2rem; }
+.modal-tarea.mostrar { display: flex; align-items: center; justify-content: center; }
+.modal-content { background: #1e293b; width: 95%; max-width: 1200px; height: 85vh; border-radius: 20px; display: flex; flex-direction: column; overflow: hidden; }
+.modal-body { display: flex; flex: 1; overflow: hidden; }
+.modal-files { width: 300px; background: #0f172a; padding: 20px; border-right: 1px solid #334155; overflow-y: auto; }
+.modal-viewer { flex: 1; background: #334155; display: flex; flex-direction: column; }
+
+.file-item { width: 100%; padding: 12px; margin-bottom: 10px; background: #1e293b; border: 1px solid #334155; color: white; border-radius: 10px; cursor: pointer; text-align: left; }
+.file-item.activo { background: var(--gradient); border: none; }
+
+/* Botones de Acción Inferiores */
+.modal-actions { padding: 15px 20px; background: #0f172a; border-top: 1px solid #334155; display: flex; justify-content: space-between; align-items: center; }
+.btn-open { background: var(--gradient); color: white; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 0.9rem; }
+.btn-github { background: #24292e; color: white; text-decoration: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; font-size: 0.9rem; border: 1px solid #444; }
+
+@media (max-width: 900px) { #sidebar { display: none; } .main-wrapper { margin-left: 0; width: 100%; } }
