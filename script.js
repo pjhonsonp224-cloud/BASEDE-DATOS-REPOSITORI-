@@ -10,7 +10,7 @@ const semanas = [
     { label: "Semana 5", descripcion: "INTRODUCCION A MIRCROSOFT SQL SERVER.", archivos: [{ nombre: "INTRODUCCION A MIRCROSOFT SQL SERVER", enlace: "archivos/semana 5-1.pdf" }, { nombre: "NORMALIZACION DE BASE DE DATOS", enlace: "archivos/semana 5-2.pdf" }] },
     { label: "Semana 6", descripcion: "Resumen de Base de datos de microsoft SQL server.", archivos: [{ nombre: "Resumen Semana 6", enlace: "archivos/Presentation 1 semana 6.pdf"}] },
     { label: "Semana 7", descripcion: "TABLAS DE MICROSOFT SQL SERVER.", archivos: [{ nombre: "TABLAS DE MICROSOFT SQL SERVER 2022", enlace: "archivos/SEMANA 7-1.pdf" }] },
-    { label: "Semana 8", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "CONSULTAS AVAZADAS", enlace: "archivos/semana 8-1.pdf" },{ nombre: "GUIA DE CONSULTAS", enlace: "archivos/semana 8-2.pdf" },{ nombre: "BASE DE DATOS", enlace: "archivos/semana 8-1.pdf" }] },
+    { label: "Semana 8", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "CONSULTAS AVAZADAS", enlace: "archivos/semana 8-1.pdf" },{ nombre: "GUIA DE CONSULTAS", enlace: "archivos/semana 8-2.pdf" },{ nombre: "BASE DE DATOS", enlace: "archivos/semana 8-3.pdf" }] },
    
     { label: "Semana 9", descripcion: "Prácticas calificadas.", archivos: [{ nombre: "PRACTICA SEMANA 10", enlace: "archivos/semana10_PRACTICA.pdf" }] },
     { label: "Semana 10", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
