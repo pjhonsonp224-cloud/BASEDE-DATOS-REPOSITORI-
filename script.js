@@ -1,19 +1,22 @@
 document.addEventListener("DOMContentLoaded", function () {
   const GITHUB_REPO_URL = "https://github.com/pjhonsonp224-cloud";
   const iconos = ["💎", "🚀", "⚡", "🔮", "🛠️", "📡", "🛡️", "🔋", "💡", "🧠", "🎯", "🔌", "🛰️", "🧪", "⚙️"];
-
-  const semanas = [
+const semanas = [
     { label: "Semana 1", descripcion: "Manuales e informe técnico.", archivos: [{ nombre: "ARQUITECTURA DE BASES DE DATOS", enlace: "archivos/Arquitectura de Sistemas de Bases de Datos.pdf" }, { nombre: "INFORME BASE DE DATOS II", enlace: "archivos/repositoros comparacion.pdf" }] },
     { label: "Semana 2", descripcion: "Instalación y modelamiento.", archivos: [{ nombre: "Manual SQL Server", enlace: "archivos/2semana_manualSQL.pdf" }, { nombre: "Modelamiento de datos", enlace: "archivos/SEMANA 2 Pregunta 01 Y 02.pdf" }] },
     { label: "Semana 3", descripcion: "Niveles de abstracción.", archivos: [{ nombre: "Resumen Arquitectura", enlace: "archivos/semana 3 resumen de arquitectura de datos y niveles de abstraccion.pdf" }, { nombre: "Modelo Relación", enlace: "archivos/3 semana modelado de datos preguntas.pdf" }] },
     { label: "Semana 4", descripcion: "Arquitectura de datos S4.", archivos: [{ nombre: "RESUMEN DE ARQUITECTURA", enlace: "archivos/SEMANA 4.pdf" }] },
-    { label: "Semana 5", descripcion: "DB QhatuPeru completo.", archivos: [{ nombre: "INTRODUCCION A MICROSOFT SQL ", enlace: "archivos/semana 5 base de datos.pdf" }, { nombre: "Incision de datos", enlace: "archivos/semana5_incision.pdf" }, { nombre: "Base de datos QhatuPeru", enlace: "archivos/semana5_creacionDB.pdf" }] },
-    { label: "Semana 6", descripcion: "Actividades avanzadas S6.", archivos: [{ nombre: "Actividades semana 6", enlace: "archivos/semana6_actividades.pdf" }] },
-    { label: "Semana 7", descripcion: "Tareas de la semana 7.", archivos: [{ nombre: "Tablas DB QhatuPeru", enlace: "archivos/semana5_tablas.pdf" }] },
-    { label: "Semana 9", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "Consultas avanzadas", enlace: "archivos/semana9_enunciados.pdf" }] },
-    { label: "Semana 10", descripcion: "Prácticas calificadas.", archivos: [{ nombre: "PRACTICA SEMANA 10", enlace: "archivos/semana10_PRACTICA.pdf" }] },
+    
+    { label: "Semana 5", descripcion: "INTRODUCCION A MIRCROSOFT SQL SERVER.", archivos: [{ nombre: "INTRODUCCION A MIRCROSOFT SQL SERVER", enlace: "archivos/semana 5-1.pdf" }, { nombre: "NORMALIZACION DE BASE DE DATOS", enlace: "archivos/semana 5-2.pdf" }] },
+    { label: "Semana 6", descripcion: "Resumen de Base de datos de microsoft SQL server.", archivos: [{ nombre: "Resumen Semana 6", enlace: "archivos/Presentation 1 semana 6.pdf"}] },
+    { label: "Semana 7", descripcion: "TABLAS DE MICROSOFT SQL SERVER.", archivos: [{ nombre: "TABLAS DE MICROSOFT SQL SERVER 2022", enlace: "archivos/SEMANA 7-1.pdf" }] },
+    { label: "Semana 8", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "CONSULTAS AVAZADAS", enlace: "archivos/semana 8-1.pdf" },{ nombre: "GUIA DE CONSULTAS", enlace: "archivos/semana 8-2.pdf" },{ nombre: "BASE DE DATOS", enlace: "archivos/semana 8-1.pdf" }] },
+   
+    { label: "Semana 9", descripcion: "Prácticas calificadas.", archivos: [{ nombre: "PRACTICA SEMANA 10", enlace: "archivos/semana10_PRACTICA.pdf" }] },
+    { label: "Semana 10", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 11", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 12", descripcion: "Gestión de datos S12.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana12_PRACTICA.pdf" }] },
+    
     { label: "Semana 13", descripcion: "Optimización de DB.", archivos: [{ nombre: "PRACTICA SEMANA 13", enlace: "archivos/semana13_PRACTICA.pdf" }] },
     { label: "Semana 14", descripcion: "Pruebas de sistemas.", archivos: [{ nombre: "Practica - Semana 14", enlace: "archivos/semana14_PRACTICA.pdf" }] },
     { label: "Semana 15", descripcion: "Repaso y examen final.", archivos: [{ nombre: "Resumen General", enlace: "archivos/semana15_resumen.pdf" }] }
