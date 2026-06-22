@@ -12,7 +12,7 @@ const semanas = [
     { label: "Semana 7", descripcion: "TABLAS DE MICROSOFT SQL SERVER.", archivos: [{ nombre: "TABLAS DE MICROSOFT SQL SERVER 2022", enlace: "archivos/SEMANA 7-1.pdf" }] },
     { label: "Semana 8", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "CONSULTAS AVAZADAS", enlace: "archivos/semana 8-1.pdf" },{ nombre: "GUIA DE CONSULTAS", enlace: "archivos/semana 8-2.pdf" },{ nombre: "BASE DE DATOS", enlace: "archivos/semana 8-3.pdf" }] },
    
-    { label: "Semana 9", descripcion: "Prácticas calificadas.", archivos: [{ nombre: "PRACTICA SEMANA 10", enlace: "archivos/semana10_PRACTICA.pdf" }] },
+ { label: "Semana 9", descripcion: "Reglamento General de Grados y Títulos de Pregrado de la UPLA.", archivos: [{ nombre: "grados y titulos ", enlace: "archivos/semana 9-1.pdf" }] },
     { label: "Semana 10", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 11", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 12", descripcion: "Gestión de datos S12.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana12_PRACTICA.pdf" }] },
