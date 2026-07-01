@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { label: "Semana 7", descripcion: "TABLAS DE MICROSOFT SQL SERVER.", archivos: [{ nombre: "TABLAS DE MICROSOFT SQL SERVER 2022", enlace: "archivos/SEMANA 7-1.pdf" }] },
     { label: "Semana 8", descripcion: "Consultas SQL avanzadas.", archivos: [{ nombre: "CONSULTAS AVAZADAS", enlace: "archivos/semana 8-1.pdf" },{ nombre: "GUIA DE CONSULTAS", enlace: "archivos/semana 8-2.pdf" },{ nombre: "BASE DE DATOS", enlace: "archivos/semana 8-1.pdf" }] },
    
-    { label: "Semana 9", descripcion: "Reglamento General de Grados y Títulos de Pregrado de la UPLA.", archivos: [{ nombre: "grados y titulos ", enlace: "archivos/semana 9-1.pdf" }] },
+    { label: "Semana 9", descripcion: "Reglamento General de Grados y Títulos de Pregrado de la UPLA.", archivos: [{ nombre: "grados y titulos ", enlace: "archivos/semana 9-1.pdf" },{ nombre: "guia de objetos y programacion ", enlace: "archivos/semana9-2.pdf" }] },
     { label: "Semana 10", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 11", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 12", descripcion: "RESPALADOS Y RECUPERACION.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana 12-1.pdf" }] },
