@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     { label: "Semana 9", descripcion: "Reglamento General de Grados y Títulos de Pregrado de la UPLA.", archivos: [{ nombre: "grados y titulos ", enlace: "archivos/semana 9-1.pdf" }] },
     { label: "Semana 10", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
     { label: "Semana 11", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
-    { label: "Semana 12", descripcion: "Gestión de datos S12.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana12_PRACTICA.pdf" }] },
+    { label: "Semana 12", descripcion: "RESPALADOS Y RECUPERACION.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana 12-1.pdf" }] },
     
     { label: "Semana 13", descripcion: "Optimización de DB.", archivos: [{ nombre: "PRACTICA SEMANA 13", enlace: "archivos/semana13_PRACTICA.pdf" }] },
     { label: "Semana 14", descripcion: "Pruebas de sistemas.", archivos: [{ nombre: "Practica - Semana 14", enlace: "archivos/semana14_PRACTICA.pdf" }] },
