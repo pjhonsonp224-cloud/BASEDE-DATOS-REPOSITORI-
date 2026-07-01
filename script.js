@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
    
     { label: "Semana 9", descripcion: "Reglamento General de Grados y Títulos de Pregrado de la UPLA.", archivos: [{ nombre: "grados y titulos ", enlace: "archivos/semana 9-1.pdf" },{ nombre: "guia de objetos y programacion ", enlace: "archivos/semana9-2.pdf" }] },
     { label: "Semana 10", descripcion: "ADMINISTRACION ESENCIAL.", archivos: [{ nombre: "MANUAL DE REGISTRO DE MICROSOFT AZURE", enlace: "archivos/semana 10-2.pdf" },{ nombre: "ADMINISTRACION DE ESENCIAS ", enlace: "archivos/semana 10-1.pdf" }] },
-    { label: "Semana 11", descripcion: "Ejercicios de aplicación.", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" }] },
+    { label: "Semana 11", descripcion: "SEGURIDAD Y CONTROL DE ACCESO .", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" },{ nombre: "PRACTICA SEMANA 11 SEGUIRDAD Y CONTROL DE ACCESO", enlace: "archivos/semana 11-1.pdf" }] },
     { label: "Semana 12", descripcion: "RESPALADOS Y RECUPERACION.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana 12-1.pdf" }] },
     
     { label: "Semana 13", descripcion: "Optimización de DB.", archivos: [{ nombre: "PRACTICA SEMANA 13", enlace: "archivos/semana13_PRACTICA.pdf" }] },
