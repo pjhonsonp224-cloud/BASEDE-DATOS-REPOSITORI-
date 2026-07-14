@@ -18,9 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     { label: "Semana 11", descripcion: "SEGURIDAD Y CONTROL DE ACCESO .", archivos: [{ nombre: "PRACTICA SEMANA 11", enlace: "archivos/semana11_PRACTICA.pdf" },{ nombre: "PRACTICA SEMANA 11 SEGUIRDAD Y CONTROL DE ACCESO", enlace: "archivos/semana 11-1.pdf" }] },
     { label: "Semana 12", descripcion: "RESPALADOS Y RECUPERACION.", archivos: [{ nombre: "PRACTICA SEMANA 12", enlace: "archivos/semana 12-1.pdf" }] },
     
-    { label: "Semana 13", descripcion: "Optimización de DB.", archivos: [{ nombre: "PRACTICA SEMANA 13", enlace: "archivos/semana13_PRACTICA.pdf" }] },
-    { label: "Semana 14", descripcion: "Pruebas de sistemas.", archivos: [{ nombre: "Practica - Semana 14", enlace: "archivos/semana14_PRACTICA.pdf" }] },
-    { label: "Semana 15", descripcion: "Repaso y examen final.", archivos: [{ nombre: "Resumen General", enlace: "archivos/semana15_resumen.pdf" }] }
+    { label: "Semana 13", descripcion: "MONITOREO Y RENDIMIENTO.", archivos: [{ nombre: "PRACTICA-SEMANA 13", enlace: "archivos/semana 13-1.pdf" }] },
+    { label: "Semana 14", descripcion: "AUTOMATIZACION Y MANTENIMIENTO.", archivos: [{ nombre: "Practica - Semana 14", enlace: "archivos/semana 14 -1.pdf" },{ nombre: "Practica - Semana 14", enlace: "archivos/semana 14-2.pdf" }] },
+    { label: "Semana 15", descripcion: "Microsoft SQL Azure - Administracion y desarrollo en la nube.", archivos: [{ nombre: "Resumen General", enlace: "archivos/semana 15 -1.pdf" },] }
+     { label: "Semana 15", descripcion: "Microsoft SQL Azure - Administracion y desarrollo en la nube II .", archivos: [{ nombre: "Resumen General II", enlace: "archivos/semana 16 - 1.pdf" }] }
   ];
 
   const contenedor = document.getElementById("contenedor-semanas");
