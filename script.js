@@ -182,6 +182,10 @@ document.addEventListener("DOMContentLoaded", function () {
       descripcion: "MONITOREO Y RENDIMIENTO.",
       archivos: [
         {
+          nombre: "RESUMEN  SEMANA 13",
+          enlace: "archivos/semana 13 -2.pdf"
+        },
+        {
           nombre: "PRACTICA SEMANA 13",
           enlace: "archivos/semana 13-1.pdf"
         }
