@@ -196,6 +196,10 @@ document.addEventListener("DOMContentLoaded", function () {
       label: "Semana 14",
       descripcion: "AUTOMATIZACION Y MANTENIMIENTO.",
       archivos: [
+         {
+          nombre: "RESUMEN ",
+          enlace: "archivos/semana14 -3.pdf"
+        },
         {
           nombre: "Practica - Semana 14",
           enlace: "archivos/semana 14 -1.pdf"
